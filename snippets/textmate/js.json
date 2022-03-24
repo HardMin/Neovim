@@ -1,0 +1,9 @@
+{
+    ".source.js":{
+        "console.log":{
+            "prefix":"clg",
+            "body":"console.log($1)",
+            "descripcion":"Console by JavaScript"
+        }
+    }
+}

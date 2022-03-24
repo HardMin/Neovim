@@ -1,0 +1,29 @@
+{
+    "suggest.noselect": false,
+    "colors.filetypes": ["*"],   
+    //--------------------------snippets---------------------//
+    "snippets.priority": 1,  
+    "snippets.trace": "verbose",
+    "snippets.extends": {
+        "cpp":["c","cpp","c#"],
+        "javascriptreact": ["javascript", "html"],
+        "typescript": ["javascript"],
+        "html": ["html", "javascript"]
+    },
+    "snippets.shortcut": "S",
+    "snippets.autoTrigger": true,
+    "snippets.triggerCharacters": [],
+    "snippets.loadFromExtensions": true,
+    "snippets.textmateSnippetsRoots": ["~/.config/nvim/snippets/textmate"],
+    "snippets.userSnippetsDirectory": "~/.config/nvim/snippets/ultisnippets",
+    "snippets.ultisnips.enable": true,
+    "snippets.ultisnips.directories" :[],
+    // ----------------------------Json----------------------//
+    "json.enable":true,
+    "json.trace.server":"off",
+    "json.execArgv": [],
+    "json.format.enable": false,
+    "json.maxItemsComputed":2500,
+    "json.schemaDownload.enable":true,
+    "json.schemas":[]
+}
