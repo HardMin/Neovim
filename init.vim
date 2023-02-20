@@ -29,7 +29,7 @@ set laststatus=2
 set scrolloff=10
 set expandtab
 "let loaded_matchparen = 1
-set shell=fish
+set shell=zsh
 
 " incremental substitution (neovim)
 set inccommand=split
@@ -64,6 +64,11 @@ autocmd InsertLeave * set nopaste
 
 " Add asterisks in block comments
 set formatoptions+=r
+
+" JSON Comillas
+set conceallevel=0
+set cole=0
+let g:vim_json_conceal = 0
 
 "}}}
 
@@ -109,6 +114,7 @@ set suffixesadd=.js,.es,.jsx,.json,.css,.less,.sass,.styl,.php,.py,.md
 autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
+autocmd FileType json setlocal tabstop=2 conceallevel=0
 
 "}}}
 
@@ -142,9 +148,15 @@ if exists("&termguicolors") && exists("&winblend")
   set background=dark
   " Use NeoSolarized
   let g:neosolarized_termtrans=1
-  runtime ./colors/NeoSolarized.vim
-  colorscheme NeoSolarized
+  " runtime ./colors/NeoSolarized.vim
+  " colorscheme NeoSolarized
 endif
+
+
+let g:tokyonight_style = 'night'
+colorscheme tokyonight
+let g:tokyonight_termtrans=1
+let g:tokyonight_transparent=1
 
 "}}}
 
@@ -154,4 +166,7 @@ set exrc
 "}}}
 
 " vim: set foldmethod=marker foldlevel=0:
+"
 
+let g:transparent_enable = 1
+set winblend=1

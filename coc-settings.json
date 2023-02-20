@@ -19,13 +19,12 @@
     "snippets.ultisnips.enable": true,
     "snippets.ultisnips.directories" :[],
     // ----------------------------Json----------------------//
-    "json.enable":true,
-    "json.trace.server":"off",
-    "json.execArgv": [],
-    "json.format.enable": false,
-    "json.maxItemsComputed":2500,
-    "json.schemaDownload.enable":true,
-    "json.schemas":[],
+   // "json.trace.server":"messages",
+   // "json.execArgv": [],
+   // "json.maxItemsComputed":2500,
+   // "json.schemaDownload.enable":true,
+   // "json.schemas":[],
+
   "suggest.completionItemKindLabels": {
     "method": "  ",
     "function": "  ",
@@ -53,5 +52,32 @@
     "value": "  ",
     "enumMember": "  ",
     "default": "  "
+  },
+
+  // ------------------- explorer
+  // "explorer.icon.source": "nvim-web-devicons",
+  // "explorer.icon.link":"nvim-web-devicons",
+  "explorer.icon.source": "nvim-web-devicons",
+  "explorer.icon.enableNerdfont": true,
+  "explorer.keyMappings.global": {
+    "yp": "copyFilepath",
+    "yy": "copyFile",
+    "dd": "cutFile",
+    "p": "pasteFile",
+    "df": "delete",
+    "f" : "search",
+    "R": "refresh",
+    "ic": "preview:content",
+
+    "a": "addFile",
+    "A": "addDirectory",
+    "r": "rename",
+
+    "q": "quit"
+  },
+
+
+  "languageserver": {
   }
+
 }

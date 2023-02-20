@@ -5,7 +5,7 @@ endif
 lua << EOF
 require 'nvim-treesitter.configs'.setup {
   highlight = {
-    enable = true,
+    enable = false,
     disble = {},
   },
   indent = {
@@ -20,5 +20,8 @@ require 'nvim-treesitter.configs'.setup {
     "scss",
     "php",
     "json",
+    "javascript",
+    "python",
+    "cpp",
   }
 }
